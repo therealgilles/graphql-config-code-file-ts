@@ -1,0 +1,6 @@
+.eslint*
+.prettier*
+**/node_modules
+**/.vscode
+package-lock.json
+./tsconfig.json
