@@ -6,6 +6,7 @@ What happens is that @graphql-eslint is used as a processor to extract GraphQL t
 
 @babel/parser throws an error when it sees the syntax error. The error propagates all the way up to ESLint.
 
+```SHELL
 > npm run lint 2>&1
 
 > @graphql-eslint/example-graphql-config-code-file-ts@0.0.1 lint
@@ -27,4 +28,4 @@ SyntaxError: Missing initializer in const declaration. (4:13)
     at Object.parseStatementContent (.../graphql-config-code-file-ts/node_modules/@babel/parser/lib/index.js:10359:18)
     at Object.parseStatement (.../graphql-config-code-file-ts/node_modules/@babel/parser/lib/index.js:14638:17)
     at Object.parseBlockOrModuleBlockBody (.../graphql-config-code-file-ts/node_modules/@babel/parser/lib/index.js:15281:25)
-
+```
